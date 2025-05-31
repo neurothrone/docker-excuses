@@ -1,6 +1,8 @@
-using DockerExcuses.Persistence.InMemory.Repositories;
+using DockerExcuses.Persistence.EFCore.Data;
+using DockerExcuses.Persistence.EFCore.Repositories;
 using DockerExcuses.Persistence.Shared.Repositories;
 using DockerExcuses.WebApi.Endpoints;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +11,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<InMemoryDataStore>();
-builder.Services.AddScoped<IExcuseRepository, InMemoryExcuseRepository>();
+// !: InMemory
+// builder.Services.AddSingleton<InMemoryDataStore>();
+// builder.Services.AddScoped<IExcuseRepository, InMemoryExcuseRepository>();
+
+// !: EFCore
+builder.Services.AddDbContext<ApiDbContext>(options => options.UseSqlite("Data Source=excuses.db"));
+builder.Services.AddScoped<IExcuseRepository, ExcusesEfCoreRepository>();
 
 var app = builder.Build();
 

@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerExcuses.Persistence.Shared", "DockerExcuses.Persistence.Shared\DockerExcuses.Persistence.Shared.csproj", "{363C7D17-1940-47B9-8E3B-8E8DF10A3E8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerExcuses.Persistence.EFCore", "DockerExcuses.Persistence.EFCore\DockerExcuses.Persistence.EFCore.csproj", "{ECEEB22F-686C-4D93-87B8-1344C9C6D707}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,10 +30,15 @@ Global
 		{363C7D17-1940-47B9-8E3B-8E8DF10A3E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{363C7D17-1940-47B9-8E3B-8E8DF10A3E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{363C7D17-1940-47B9-8E3B-8E8DF10A3E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECEEB22F-686C-4D93-87B8-1344C9C6D707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEEB22F-686C-4D93-87B8-1344C9C6D707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEEB22F-686C-4D93-87B8-1344C9C6D707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEEB22F-686C-4D93-87B8-1344C9C6D707}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FC68133C-C4CA-4F41-9242-F9FD7B5C00E0} = {54CD73E9-44F1-4868-A642-B794337F1DD7}
 		{A43BBB7F-80C0-4FA2-87D4-F074DA61BEEC} = {FC7F8780-2B24-4E4C-8D82-9D436823E358}
 		{363C7D17-1940-47B9-8E3B-8E8DF10A3E8C} = {FC7F8780-2B24-4E4C-8D82-9D436823E358}
+		{ECEEB22F-686C-4D93-87B8-1344C9C6D707} = {FC7F8780-2B24-4E4C-8D82-9D436823E358}
 	EndGlobalSection
 EndGlobal

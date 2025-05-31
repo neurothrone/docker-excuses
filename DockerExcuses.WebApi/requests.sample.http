@@ -1,0 +1,29 @@
+#@BaseApiUrl = http://localhost:5001
+@BaseApiUrl = your-api-url-here
+@FunctionKey = your-function-key-here
+@ExcuseId = 6
+
+### Get all excuses
+GET {{BaseApiUrl}}/excuses
+
+### Get a specific excuse by ID
+GET {{BaseApiUrl}}/excuses/{{ExcuseId}}
+
+### Create a new excuse
+POST {{BaseApiUrl}}/excuses
+Content-Type: application/json
+
+{
+  "text": "I was stuck in traffic for hours."
+}
+
+### Update an existing excuse by ID
+PUT {{BaseApiUrl}}/excuses/{{ExcuseId}}
+Content-Type: application/json
+
+{
+  "text": "I was stuck in traffic for hours, and I missed the meeting."
+}
+
+### Delete an excuse by ID
+DELETE {{BaseApiUrl}}/excuses/{{ExcuseId}}

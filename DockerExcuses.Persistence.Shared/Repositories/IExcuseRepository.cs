@@ -1,6 +1,6 @@
-﻿using DockerExcuses.WebApi.Models;
+﻿using DockerExcuses.Persistence.Shared.Models;
 
-namespace DockerExcuses.WebApi.Repositories;
+namespace DockerExcuses.Persistence.Shared.Repositories;
 
 public interface IExcuseRepository
 {

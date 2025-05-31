@@ -1,6 +1,7 @@
-﻿using DockerExcuses.WebApi.Models;
+﻿using DockerExcuses.Persistence.Shared.Models;
+using DockerExcuses.Persistence.Shared.Repositories;
 
-namespace DockerExcuses.WebApi.Repositories;
+namespace DockerExcuses.Persistence.InMemory.Repositories;
 
 public class InMemoryDataStore
 {

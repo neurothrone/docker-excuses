@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace DockerExcuses.WebApi.Models;
+namespace DockerExcuses.Persistence.Shared.Models;
 
 public record ExcuseInputDto
 {
@@ -8,5 +8,5 @@ public record ExcuseInputDto
     public required string Text { get; init; }
 
     [JsonPropertyName("category")]
-    public string Category { get; set; } = string.Empty;
+    public required string Category { get; init; }
 }

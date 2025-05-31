@@ -2,6 +2,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerExcuses.WebApi", "DockerExcuses.WebApi\DockerExcuses.WebApi.csproj", "{FC68133C-C4CA-4F41-9242-F9FD7B5C00E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerExcuses.Persistence.InMemory", "DockerExcuses.Persistence.InMemory\DockerExcuses.Persistence.InMemory.csproj", "{A43BBB7F-80C0-4FA2-87D4-F074DA61BEEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{54CD73E9-44F1-4868-A642-B794337F1DD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{FC7F8780-2B24-4E4C-8D82-9D436823E358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerExcuses.Persistence.Shared", "DockerExcuses.Persistence.Shared\DockerExcuses.Persistence.Shared.csproj", "{363C7D17-1940-47B9-8E3B-8E8DF10A3E8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +20,18 @@ Global
 		{FC68133C-C4CA-4F41-9242-F9FD7B5C00E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC68133C-C4CA-4F41-9242-F9FD7B5C00E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC68133C-C4CA-4F41-9242-F9FD7B5C00E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A43BBB7F-80C0-4FA2-87D4-F074DA61BEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43BBB7F-80C0-4FA2-87D4-F074DA61BEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43BBB7F-80C0-4FA2-87D4-F074DA61BEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43BBB7F-80C0-4FA2-87D4-F074DA61BEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{363C7D17-1940-47B9-8E3B-8E8DF10A3E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{363C7D17-1940-47B9-8E3B-8E8DF10A3E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{363C7D17-1940-47B9-8E3B-8E8DF10A3E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{363C7D17-1940-47B9-8E3B-8E8DF10A3E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC68133C-C4CA-4F41-9242-F9FD7B5C00E0} = {54CD73E9-44F1-4868-A642-B794337F1DD7}
+		{A43BBB7F-80C0-4FA2-87D4-F074DA61BEEC} = {FC7F8780-2B24-4E4C-8D82-9D436823E358}
+		{363C7D17-1940-47B9-8E3B-8E8DF10A3E8C} = {FC7F8780-2B24-4E4C-8D82-9D436823E358}
 	EndGlobalSection
 EndGlobal

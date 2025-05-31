@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace DockerExcuses.WebApi.Models;
+namespace DockerExcuses.Persistence.Shared.Models;
 
 public class Excuse
 {

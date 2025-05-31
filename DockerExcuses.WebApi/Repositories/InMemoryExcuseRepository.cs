@@ -6,14 +6,12 @@ public class InMemoryDataStore
 {
     public readonly List<Excuse> Excuses =
     [
-        new() { Id = 1, Text = "Docker is still starting up.", Category = "Startup" },
-        new() { Id = 2, Text = "The container is running out of memory.", Category = "Resource" },
-        new() { Id = 3, Text = "Network issues are preventing the container from connecting.", Category = "Network" },
-        new() { Id = 4, Text = "The image is not built correctly.", Category = "Image" },
-        new() { Id = 5, Text = "There was a problem with the Docker daemon.", Category = "Daemon" }
+        new() { Id = 1, Text = "My computer exploded", Category = "work" },
+        new() { Id = 2, Text = "My cat hid my car keys", Category = "pets" },
+        new() { Id = 3, Text = "Gravity stopped working for me temporarily", Category = "general" }
     ];
 
-    public int NextExcuseId = 5;
+    public int NextExcuseId = 3;
 }
 
 public class InMemoryExcuseRepository : IExcuseRepository

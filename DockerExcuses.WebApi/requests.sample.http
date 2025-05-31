@@ -14,7 +14,8 @@ POST {{BaseApiUrl}}/excuses
 Content-Type: application/json
 
 {
-  "text": "I was stuck in traffic for hours."
+  "text": "Aliens abducted my homework",
+  "category": "school"
 }
 
 ### Update an existing excuse by ID
@@ -22,7 +23,8 @@ PUT {{BaseApiUrl}}/excuses/{{ExcuseId}}
 Content-Type: application/json
 
 {
-  "text": "I was stuck in traffic for hours, and I missed the meeting."
+  "text": "I got stuck in an existential crisis",
+  "category": "general"
 }
 
 ### Delete an excuse by ID
